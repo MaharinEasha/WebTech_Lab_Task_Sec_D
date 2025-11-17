@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment System</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="design/design.css">
+</head>
+<body>
+
+<div class="comment-section">
+    <!-- Article Title -->
+    <h2 style="text-align: center;">Article Title</h2>
+
+   
+
+    <!-- Dynamic Stats -->
+    <div class="stats">
+        Total Comments: <span id="total-comments">0</span> |
+        Average Rating: <span id="average-rating">0</span>
+    </div>
+
+    <!-- Comment Form -->
+    <form id="comment-form">
+        <label for="name">Name (required)</label>
+        <input type="text" id="name">
+
+        <label for="email">Email (optional)</label>
+        <input type="text" id="email">
+
+        <label for="comment">Comment (required)</label>
+        <textarea id="comment"></textarea>
+
+        <label>Rating (optional)</label>
+        <div id="rating">
+            <span class="stars" data-value="1">&#9733;</span>
+            <span class="stars" data-value="2">&#9733;</span>
+            <span class="stars" data-value="3">&#9733;</span>
+            <span class="stars" data-value="4">&#9733;</span>
+            <span class="stars" data-value="5">&#9733;</span>
+        </div>
+
+        <input type="button" value="Submit" id="submit-btn">
+    </form>
+
+    <!-- Comments List -->
+    <div id="comments-list"></div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
