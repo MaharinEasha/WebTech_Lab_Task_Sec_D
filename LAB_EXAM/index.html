@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <link rel="stylesheet" href="design/design.css">
+</head>
+<body>
+
+<div class="registration-section">
+    
+    <h2 style="text-align: center;">Registration Form</h2>
+
+   
+
+    <form id="reg-form">
+        <label for="name">Name (required)</label>
+        
+        <input type="text" id="name">
+
+        <label for="email">Email (required)</label>
+
+        <input type="text" id="email">
+
+        <label for="instruction">Instruction (optinal)</label>
+
+        <textarea id="instruction"></textarea>
+
+        <label>Attendance Type</label>
+            <div class="radios">
+                <label><input type="radio" name="attendance" value="Virtual"> Virtual</label>
+                <label><input type="radio" name="attendance" value="In-Person"> In-Person</label>
+            </div>
+
+        
+
+        <input type="button" value="Submit" id="submit-btn">
+    </form>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
